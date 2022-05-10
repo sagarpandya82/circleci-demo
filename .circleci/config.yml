@@ -4,14 +4,14 @@ jobs:
   build:
     working_directory: ~/circleci-ruby
     docker:
-      - image: "circleci/ruby:3.2.0"
+      - image: "cimg/ruby:3.1.2"
     steps:
       - checkout
       - run: ruby pair.rb
   test:
     working_directory: ~/circleci-ruby
     docker:
-      - image: "circleci/ruby:3.2.0"
+      - image: "cimg/ruby:3.1.2"
     steps:
       - checkout
       - run: rspec spec spec/pair_spec.rb -f d
