@@ -7,7 +7,7 @@ class Pair
   end
 
   def add
-    @x + @y + 1
+    @x + @y
   end
 
 end
